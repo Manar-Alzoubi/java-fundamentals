@@ -16,19 +16,21 @@ public class Main {
 
     public static void flipNHeads( int n)
     {
-//            int count =3;
+           int count=0;
         int heads =0;
         for (int i=0; i<n; i++) {
             double x = Math.random();
-
-            if (x < 0.5)
+            if (x < 0.5){
                 System.out.println("tails");
+                count=0;
+            }
             else {
                 System.out.println("heads");
                 heads++;
+                count++;
             }
         }
-        System.out.println("It took " + n +" flips to flip " +heads +" heads in a row.\n");
+        System.out.println("It took " + n +" flips to flip " +count +" heads in a row.\n");
 
 
     }
