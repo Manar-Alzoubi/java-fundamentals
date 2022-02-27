@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fbf1cb85-5d51-4bf1-82e0-5de23cb079ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/linter/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linter/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linter/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linter/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linter/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linter/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/java-fundamentals.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/bin/main/basiclibrary/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/bin/test/basiclibrary/LibraryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/lib/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/lib/src/main/java/basiclibrary/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basiclibrary/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/untitled.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25hqAubzqbItDA1QwX2Ox88yBj8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbf1cb85-5d51-4bf1-82e0-5de23cb079ce" name="Changes" comment="" />
+      <created>1645989538379</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645989538379</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
