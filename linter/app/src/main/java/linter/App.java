@@ -5,26 +5,34 @@ package linter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class App {
+public class
+App {
     public boolean getGreeting() {
         return true;
     }
 
     public static void main(String[] args) {
-
-        System.out.println(new App().getGreeting());
+        ArrayList<String> ErrorMessages = fileReader();
+        System.out.println("error in line");
+//        for (String error:
+//                ErrorMessages) {
+//            System.out.println(error);
+//        }
+//        System.out.println(new App().getGreeting());
+//        fileReader();
     }
 
-    public void fileReader()
+    public static ArrayList<String> fileReader()
     {
         try {
-            File file = new File("app/src/main/resources/gates.js");
+            File file = new File("gates.js");
             Scanner myReader = new Scanner(file);
             while (myReader.hasNextLine()) {
-                String linenum = myReader.nextLine();
-                System.out.println(linenum);
+                String data = myReader.nextLine();
+                System.out.println(data);
             }
             String newline = myReader.nextLine();
             while (newline != null)
@@ -37,5 +45,6 @@ public class App {
             System.err.println("An error occurred.");
             e.printStackTrace();
         }
+        return null;
     }
 }
