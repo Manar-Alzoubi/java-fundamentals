@@ -12,3 +12,16 @@ Finished Tasks :
 3- LocalClock : method clock that uses Java’s built-in LocalDateTime object to constantly print out the current time, second by second. The program running until press CTRL-C or presses the “stop” 
 
 - Stretch Goals: LocalClock prints how fast the program is processing itself between time updates in MHz
+
+
+
+
+## Lab3 
+
+1-  minMax(): find the max temp in month , find min temp in month , find temps that are not appear in month 
+
+2-  tally (): determine who is the winner between number of peoples after voting 
+
+3-   read a file a determine errors exist in this file 
+
+
