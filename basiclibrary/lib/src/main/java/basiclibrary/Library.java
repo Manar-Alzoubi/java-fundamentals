@@ -9,7 +9,7 @@ public class Library {
         return true;
     }
 
-    public static Collection<Integer> minMax(int[][] arr) {
+    public static HashSet minMax(int[][] arr) {
         int min = 100;
         int max = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -23,7 +23,6 @@ public class Library {
         }
         System.out.println("High: " + max);
         System.out.println("Low: " + min);
-//        int x= min;
 
         HashSet notSeen = new HashSet<>();
         HashSet<Integer> allelements = new HashSet<>();
@@ -36,7 +35,10 @@ public class Library {
 
         for (int i =min ;i<=max;i++){
             if (allelements.contains(i) ==false ){
-                notSeen.add("Never saw temperature: "+i);
+                notSeen.add(i);
+                System.out.println(" Never saw temperature: "+i);
+
+
             }
         }
         return notSeen;
@@ -167,7 +169,8 @@ public class Library {
         };
        System.out.println(Arrays.toString(lowest_Average(weeklyMonthTemperatures)));
 
-       System.out.println( minMax(weeklyMonthTemperatures));
+
+        System.out.println(minMax(weeklyMonthTemperatures));
 
         List<String> votes = new ArrayList<>();
         votes.add("Bush");

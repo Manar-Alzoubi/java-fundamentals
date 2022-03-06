@@ -3,16 +3,23 @@
  */
 package linter;
 
+<<<<<<< HEAD
 import java.io.*;
+=======
+import java.io.File;
+import java.io.FileNotFoundException;
+>>>>>>> cfa86be343302a00336690aab1117062cde726fb
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class App {
+public class
+App {
     public boolean getGreeting() {
         return true;
     }
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         fileReader("app/src/main/resources/gates.js");
 //        System.out.println(new App().getGreeting());
     }
@@ -44,6 +51,26 @@ public class App {
                 }
 
                 data = scanner.nextLine();
+=======
+        ArrayList<String> ErrorMessages = fileReader();
+        System.out.println("error in line");
+//        for (String error:
+//                ErrorMessages) {
+//            System.out.println(error);
+//        }
+//        System.out.println(new App().getGreeting());
+//        fileReader();
+    }
+
+    public static ArrayList<String> fileReader()
+    {
+        try {
+            File file = new File("gates.js");
+            Scanner myReader = new Scanner(file);
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                System.out.println(data);
+>>>>>>> cfa86be343302a00336690aab1117062cde726fb
             }
 
             // close the scanner
@@ -54,9 +81,15 @@ public class App {
             System.err.println("an error occured");
             ex.printStackTrace();
         }
+<<<<<<< HEAD
 
 
         return err;
     }}
 
 
+=======
+        return null;
+    }
+}
+>>>>>>> cfa86be343302a00336690aab1117062cde726fb
