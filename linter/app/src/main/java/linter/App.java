@@ -3,23 +3,22 @@
  */
 package linter;
 
-<<<<<<< HEAD
+
 import java.io.*;
-=======
+
 import java.io.File;
 import java.io.FileNotFoundException;
->>>>>>> cfa86be343302a00336690aab1117062cde726fb
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class
-App {
+public class App {
     public boolean getGreeting() {
         return true;
     }
 
     public static void main(String[] args) {
-<<<<<<< HEAD
+
         fileReader("app/src/main/resources/gates.js");
 //        System.out.println(new App().getGreeting());
     }
@@ -35,61 +34,42 @@ App {
             // read until end of file (EOF)
             String data = scanner.nextLine();
             while (scanner.hasNextLine()) {
-                linNum++;
-                System.out.println(scanner.nextLine());
-                if( data.endsWith(";") || data.endsWith("}") || data.endsWith("{") || data.contains("if") || data.contains("else") ){
-                    System.out.println(data);
-                    err.add("Line "+linNum+" : Missing semicolon.");
-                    System.out.println("Line : "+linNum+"  Missing semicolon." );
-//                    System.out.println("linnum =  " +linNum);
-                }
 
-                else{
+                System.out.println(scanner.nextLine());
+                if (data.startsWith("//")&&data.endsWith(";") && data.endsWith("}") && data.endsWith("{") && data.contains("if") && data.contains("else")) {
+//                    System.out.println(data);
+//                    err.add("Line " + linNum + " : Missing semicolon.");
+//                    System.out.println("Line : " + linNum + "  Missing semicolon.");
                     linNum++;
-                    err.add("Line "+linNum+" : Missing semicolon.");
-                    System.out.println("Line : "+linNum+"  Missing semicolon." );
+
+
+                } else {
+                    linNum++;
+                    err.add("Line " + linNum + " : Missing semicolon.");
+                    System.out.println("Line : " + linNum + "  Missing semicolon.");
                 }
 
                 data = scanner.nextLine();
-=======
-        ArrayList<String> ErrorMessages = fileReader();
-        System.out.println("error in line");
-//        for (String error:
-//                ErrorMessages) {
-//            System.out.println(error);
-//        }
-//        System.out.println(new App().getGreeting());
-//        fileReader();
-    }
 
-    public static ArrayList<String> fileReader()
-    {
-        try {
-            File file = new File("gates.js");
-            Scanner myReader = new Scanner(file);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                System.out.println(data);
->>>>>>> cfa86be343302a00336690aab1117062cde726fb
+
+                linNum++;
             }
+                // close the scanner
+                scanner.close();
+                System.out.println("file closed");
 
-            // close the scanner
-            scanner.close();
-            System.out.println("file closed");
-
-        } catch (FileNotFoundException ex) {
+         }catch (FileNotFoundException e) {
             System.err.println("an error occured");
-            ex.printStackTrace();
+            e.printStackTrace();
         }
-<<<<<<< HEAD
+
 
 
         return err;
-    }}
-
-
-=======
-        return null;
     }
+
+
+
+
 }
->>>>>>> cfa86be343302a00336690aab1117062cde726fb
+

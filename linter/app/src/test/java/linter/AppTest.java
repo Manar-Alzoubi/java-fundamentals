@@ -20,7 +20,7 @@ class AppTest {
 
     @Test void oneErrorTest (){
         App classUnderTest = new App();
-        ArrayList<String> errornum = classUnderTest.fileReader("app/src/test/resources/oneerror.js");
+        ArrayList<String> errornum = classUnderTest.fileReader("linter/app/src/test/resources/oneerror.js");
         assertEquals(1 , errornum.size());
     }
     @Test void fewErrorTest (){
