@@ -4,11 +4,40 @@
 package linter;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+
+
+    @Test void noErrorTest (){
         App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+        ArrayList<String> errornum = classUnderTest.fileReader("app/src/test/resources/noerrors.js");
+        assertEquals(0 , errornum.size());
+    }
+
+    @Test void oneErrorTest (){
+        App classUnderTest = new App();
+        ArrayList<String> errornum = classUnderTest.fileReader("app/src/test/resources/oneerror.js");
+        assertEquals(1 , errornum.size());
+    }
+    @Test void fewErrorTest (){
+        App classUnderTest = new App();
+        ArrayList<String> errornum = classUnderTest.fileReader("app/src/test/resources/fewerror.js");
+        assertEquals(3 , errornum.size());
+    }
+
+    @Test void manyErrorTest (){
+        App classUnderTest = new App();
+        ArrayList<String> errornum = classUnderTest.fileReader("app/src/test/resources/manyerror.js");
+        assertEquals(7 , errornum.size());
+    }
+
+    @Test void emptyTest (){
+        App classUnderTest = new App();
+        ArrayList<String> errornum = classUnderTest.fileReader("app/src/test/resources/empty.js");
+        assertEquals(0 , errornum.size());
     }
 }
