@@ -10,9 +10,40 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    @Test void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+//
+    // Test Shop constructor
+    @Test void shopConstructor(){
+        Shop shop1 = new Shop("Sadan Shop", "Toys shop",30);
+        assertEquals(shop1.getName(), "Sadan Shop");
+        assertEquals(shop1.getDescription(), "Toys shop");
+        assertEquals(shop1.getDollarNumbers(), 30);
+    }
+
+    // Test toString in shop class
+    @Test void shopToStringTest(){
+        Shop shop1 = new Shop("Sadan Shop", "Toys shop",30);
+        assertEquals(shop1.toString(),"Shop{name='Sadan Shop', description='Toys shop', dollarNumbers=30}");
+    }
+    // Test Shop constructor
+    @Test void thearterConstructor() {
+        Theater theater = new Theater("First theater");
+    }
+    //Test Add movies
+    @Test void AddMovieTest()
+    {
+         ArrayList<String> allMovies = new ArrayList <>();
+         allMovies.add("Frozen");
+         allMovies.add("Home Alone");
+         assertTrue(allMovies.contains("Frozen")== true && (allMovies.contains("Home Alone")));
+    }
+    // Test Remove movie
+    @Test void removeMovieTest()
+    {
+        ArrayList<String> allMovies = new ArrayList <>();
+        allMovies.add("Frozen");
+        allMovies.add("Home Alone");
+        allMovies.remove("Home Alone");
+        assertTrue(allMovies.contains("Frozen") && !(allMovies.contains("Home Alone")));
     }
 
     @Test // Test Review constructor
@@ -61,4 +92,9 @@ class LibraryTest {
 
 
     }
+
+//    @Test void someLibraryMethodReturnsTrue() {
+//        Library classUnderTest = new Library();
+//        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+//    }
 }

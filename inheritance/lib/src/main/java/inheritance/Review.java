@@ -18,6 +18,15 @@ public class Review {
         }
     }
 
+    public Review() {
+
+    }
+
+//    public Review(String name) {
+//    }
+//
+
+
 
     public void setBody(String body) {
         this.body = body;
@@ -48,4 +57,6 @@ public class Review {
                 ", numOfStars=" + starsNum +
                 '}';
     }
+
+
 }
