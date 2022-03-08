@@ -51,7 +51,6 @@ public class App {
 
                 data = scanner.nextLine();
 
-
                 linNum++;
             }
                 // close the scanner
@@ -62,14 +61,7 @@ public class App {
             System.err.println("an error occured");
             e.printStackTrace();
         }
-
-
-
         return err;
     }
 
-
-
-
 }
-
