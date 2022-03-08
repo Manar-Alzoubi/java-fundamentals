@@ -10,19 +10,31 @@ public class Library {
 
     public static void main(String[] args) {
 
-        Restaurant Rest1 = new Restaurant("My resturant", 250,4);
+        Restaurant Rest1 = new Restaurant("My restaurant", "250",4);
         System.out.println( Rest1.toString());
 
-        Review Rev1= new Review("this resturant is perfect ", "Manar",5);
-        System.out.println( Rev1.toString());
-        Review Rev2= new Review("it is comfortable ", "Sadan",4);
-        Review Rev3= new Review("it is comfortable ", "Sadan",2);
+        Review Rev1= new Review("this restaurant is perfect ", "Manar",4);
         Rest1.AddReview(Rev1);
+        System.out.println( Rev1.toString());
+
+        System.out.println("\n");
+        System.out.println(Rest1);
+
+        Review Rev2= new Review("it is comfortable ", "Sadan",2);
         Rest1.AddReview(Rev2);
-        Rest1.AddReview(Rev3);
-
-
+        System.out.println(Rest1);
+        System.out.println("\n");
+        Review Rev3= new Review("it is comfortable ", "Elien",3);
+        Rest1.AddReview( Rev3);
+        System.out.println(Rest1);
+        System.out.println("\n");
+        Review Rev4= new Review("it is comfortable ", "Elien",10);
+        Rest1.AddReview( Rev4);
+        System.out.println(Rest1);
     }
 
 
 }
+
+
+

@@ -4,17 +4,23 @@ import java.util.ArrayList;
 
 public class Restaurant {
 
+
     private String name;
     private int numStars ;
-    private double priceCategory;
+    private String priceCategory;
 
+    static ArrayList <Review> reviewArrayList = new ArrayList <>();
 
-    static ArrayList <Integer> numberOfStars = new ArrayList <Integer>();
-    public Restaurant(String name, double priceCategory, int numStars) {
+    public Restaurant(String name, String priceCategory, int numStars) {
         this.name = name;
         this.priceCategory = priceCategory;
-        this.numStars=numStars;
+        if (numStars >0 && numStars <=5)
+            this.numStars = numStars;
+        else
+            System.out.println("\n invalid num of stars, please choose number from 0 to 5");
+
     }
+
 
     public void setName(String name) {
         this.name = name;
@@ -32,6 +38,14 @@ public class Restaurant {
     public int getNumStars() {
         return numStars;
     }
+    public String getPriceCategory() {
+        return priceCategory;
+    }
+
+    public void setNumStars(int numStars) {
+
+        this.numStars = numStars;
+    }
 
     @Override
     public String toString() {
@@ -42,32 +56,13 @@ public class Restaurant {
                 '}';
     }
 
-    public double getPriceCategory() {
-        return priceCategory;
-    }
-
-int AddReview(Review newRev)
-    {
-      int sum =0;
-
-        numberOfStars.add(newRev.getNumOfStars());
-        for (int i=0; i<numberOfStars.size();i++)
-            sum=sum+newRev.getNumOfStars();
-
-      int updateStars= sum/numberOfStars.size();
-      this.numStars=updateStars;
-
-        System.out.println("updated stars = "+this.numStars );
-        return  this.numStars;
-    }
-
-
-
-
-
-
-
-
+    public void AddReview(Review oneReview) {
+        reviewArrayList.add(oneReview);
+        int sum = 0;
+        for (int i=0; i<reviewArrayList.size();i++){
+           sum=sum+reviewArrayList.get(i).getNumOfStars();}
+        setNumStars( sum / reviewArrayList.size());
+        }
 
 
 
