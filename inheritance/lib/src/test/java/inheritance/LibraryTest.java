@@ -20,17 +20,17 @@ class LibraryTest {
     {
         Review Rev1 = new Review("Excellent", "Me",4);
         assertEquals(Rev1.getBody(), "Excellent");
-         assertEquals(Rev1.getAuthor(), "Me");
-         assertEquals(Rev1.getNumOfStars(), 4);
+        assertEquals(Rev1.getAuthor(), "Me");
+        assertEquals(Rev1.getNumOfStars(), 4);
 
     }
 
     @Test // Test Resturant constructor
     void RestConTest()
     {
-        Restaurant Rest1 = new Restaurant("My resturant", 250,4);
-        assertEquals(Rest1.getName(), "My resturant");
-        assertEquals(Rest1.getPriceCategory(), 250);
+        Restaurant Rest1 = new Restaurant("My restaurant", "250",4);
+        assertEquals(Rest1.getName(), "My restaurant");
+        assertEquals(Rest1.getPriceCategory(), "250");
         assertEquals(Rest1.getNumStars(), 4);
     }
 
@@ -43,24 +43,22 @@ class LibraryTest {
     @Test // Test Resturant toString
     void toStringResTest()
     {
-        Restaurant Rest1 = new Restaurant("My resturant", 250,4);
-        assertEquals(Rest1.toString(),"Restaurant{name='My resturant', numStars=4, priceCategory=250.0}");
+        Restaurant Rest1 = new Restaurant("My resturant", "250",4);
+        assertEquals(Rest1.toString(),"Restaurant{name='My resturant', numStars=4, priceCategory=250}");
     }
-//    @Test
-//    void AddReviewTest()
-//    {Restaurant Rest1 = new Restaurant("My resturant", 250,4);
-//        ArrayList<Integer> starsnum = new ArrayList <Integer>();
-//        numberOfStars.add("My resturant", 250,5);
-//        numberOfStars.add("resturant", 280,4);
-//        numberOfStars.add("resturant", 300,3);
-//        starsnum.add(4);
-//        starsnum.add(3);
-//        starsnum.add(5);
-//        Review Rev1= new Review("this resturant is perfect ", "Manar",4);
-//        Review Rev2= new Review("this resturant is perfect ", "Manar",2);
-//        Review Rev3= new Review("this resturant is perfect ", "Manar",3);
-//        assertEquals(Rest1.AddReview(Rev1), 2.5);
-//
-//
-//    }
+    @Test
+    void AddReviewTest()
+    {Restaurant Rest1 = new Restaurant("My resturant", "250",4);
+        ArrayList <Review> reviewList = new ArrayList <>();
+        Review Rev1= new Review("this resturant is perfect", "Manar",4);
+        Review Rev2= new Review("this resturant is not good", "Sadan",2);
+        Review Rev3= new Review("this resturant is good", "Me",3);
+        reviewList.add(Rev1);
+        reviewList.add(Rev2);
+        reviewList.add(Rev3);
+
+        assertEquals(Rest1.toString(),"Restaurant{name='My resturant', numStars=4, priceCategory=250}" );
+
+
+    }
 }
