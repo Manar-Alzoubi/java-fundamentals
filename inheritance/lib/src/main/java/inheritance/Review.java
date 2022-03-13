@@ -1,11 +1,15 @@
 package inheritance;
 
 public class Review {
+    private String name;
     private String body;
     private String author;
     private int starsNum;
+    private String nameOfMovie;
 
-    public Review(String body, String author,int starsNum) {
+
+
+    public Review(String body, String author, int starsNum, String comment) {
         this.body = body;
         this.author = author;
 
@@ -18,13 +22,9 @@ public class Review {
         }
     }
 
-    public Review() {
-
+    public Review(String name) {
+        this.name = name;
     }
-
-//    public Review(String name) {
-//    }
-//
 
 
 
